@@ -20,13 +20,22 @@ var articles = {
         date:'Aug 29, 2017',
         content: `<p>
                         This is content for my article.This is content for my article.This is content for my article.This is content for my article. This is content for my article.This is content for my article.This is content for my article.This is content for my article.This is content for my article
-                    </p>`
+                    </p>
+                    <p>
+                    This is content for my article.This is content for my article.This is content for my article.This is content for my article. This is content for my article.This is content for my article.This is content for my article.This is content for my article.This is content for my article
+                   </p>`
     },
     'article-Three':{
         title: 'Article Three | Mohamed Anas',
         heading:'Article Three',
         date:'Aug 31, 2017',
         content: `<p>
+                        This is content for my article.This is content for my article.This is content for my article.This is content for my article. This is content for my article.This is content for my article.This is content for my article.This is content for my article.This is content for my article
+                    </p>
+                    <p>
+                    This is content for my article.This is content for my article.This is content for my article.This is content for my article. This is content for my article.This is content for my article.This is content for my article.This is content for my article.This is content for my article
+                    </p>
+                    <p>
                         This is content for my article.This is content for my article.This is content for my article.This is content for my article. This is content for my article.This is content for my article.This is content for my article.This is content for my article.This is content for my article
                     </p>`
     }

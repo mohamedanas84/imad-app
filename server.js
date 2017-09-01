@@ -113,11 +113,22 @@ app.get('/submit-name', function(req,res){
     //JSON - Javascript Object Notation
     res.send(JSON.stringify(names));
 });
-app.get('/:articleName', function(req,res) {
+app.get('/articles/:articleName', function(req,res) {
     //articleName == article-One
     //articles[articleName] == {} content object for article one
-  var articleName = req.params.articleName;
-  res.send(createTemplate(articles[articleName]));
+    //var articleName = req.params.articleName;
+  pool.query("Select * from article where title = " + req.params.articleName, function(err,result){
+      if(err){
+          res.status(500).send(err.toString());
+      } else{
+          if(result.rows.length === 0){
+              res.status(404).send('Article Not Found');
+          } else{
+              var articleData = result.rows[0];
+              res.send(createTemplate(articleData));
+          }
+      }
+  });
 });
 
 app.get('/article-two', function(req,res) {

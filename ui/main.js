@@ -7,7 +7,7 @@ function moveRight() {
 }
 img.onclick = function () {
     var interval = setInterval(moveRight,30);
-};*/
+};
 var button = document.getElementById('counter');
 var counter = 0;
 button.onclick = function() {
@@ -28,7 +28,7 @@ button.onclick = function() {
     //Make the Request
     request.open('GET','http://imohamedanas.imad.hasura-app.io/counter',true)
     request.send(null);
-};
+};*/
 
 //Submit the username/password to login
 var submit = document.getElementById('submit_btn');

@@ -39,8 +39,8 @@ submit.onclick = function () {
     
     // Capture the response and store into the variable
     request.onreadystatechange = function() {
-        if(request.readyState === XMLHttpRequest.DONE){
-             if(request.status === 200){
+        if(request.readyState == XMLHttpRequest.DONE){
+             if(request.status == 200){
                 /*var names = request.responseText;
                 names = JSON.parse(names);
                 var list = '';
@@ -51,9 +51,9 @@ submit.onclick = function () {
                 ul.innerHTML = list;*/
                 console.log('user logged in');
                 alert('logged in successfully');
-             } else if(request.status === 403){
+             } else if(request.status == 403){
                  alert('username/password are incorrect');
-             } else if(request.status === 500) {
+             } else if(request.status == 500) {
                  alert('Something went Wrong on the server');
              }
         }
